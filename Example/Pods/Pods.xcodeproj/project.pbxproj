@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AC61C9E3E579ECE5E77AE9A8A8BB5FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4509407BC48C15692DA32890D9D0EB9C /* VuMeterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE1FBEDDEAB754F79D010E42941D74E /* VuMeterView.xib */; };
+		5DD85A0F0A22C76ED2C9A3D7A2C76257 /* CAFVuMeter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F0E42595E224DB5B683CB1E5C653368C /* CAFVuMeter.bundle */; };
+		88AC19D7F60E3C72C58EFB17059C6227 /* VuMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7446361279967520BCE0B94563C593 /* VuMeterView.swift */; };
+		977C1A5F18056199FC1EE65E697F13F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AA66D1C98FB00DB44B26A973ACA31A2C /* CAFVuMeter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03B7524C111396E9FA4216D8B761D /* CAFVuMeter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E714A9BE6D636F939D6926B9CDACB8 /* CAFVuMeter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB63B4B4748A97ECA5EEF3ABB7629655 /* CAFVuMeter-dummy.m */; };
+		C8E0CB563E3ADC72211FA85AD03256FF /* Pods-CAFVuMeter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA08FB06B0E816E9C9B4C99C9CD6BF /* Pods-CAFVuMeter_Tests-dummy.m */; };
+		DF4D062E80114B7A765ECADA560A82AF /* Pods-CAFVuMeter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62E434859C342E96BFCE6161E450D71E /* Pods-CAFVuMeter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA852F08A2AC110826BE11AD7F6DEF8 /* Pods-CAFVuMeter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84DF5C3DF993CB818A906CFB159FE47A /* Pods-CAFVuMeter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1C0EEF375D8AC4D4366E83D7E2FDD03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F1E136814D64F0FF4F50AEEC0CCCBA65 /* Pods-CAFVuMeter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCAD9C5C95417E7E2D68BCF63812EF6 /* Pods-CAFVuMeter_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CA2C2C013DEF8C2BBB4F1986C24D1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556F25DD23D5D5AC6C9E26C65D862413;
+			remoteInfo = "CAFVuMeter-CAFVuMeter";
+		};
+		D1F5A487D4EC9B17EABB8E51F6AA9BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24DD70E753E1C7533E4299523E977D2F;
+			remoteInfo = CAFVuMeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1929797A42209D69BF68CC63FC046E35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22176DEED3D3A88396564A12EDA82E2E /* CAFVuMeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CAFVuMeter.framework; path = CAFVuMeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B152B1D5DC7A3BC6FB5B15D6DF21421 /* Pods-CAFVuMeter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CAFVuMeter_Tests-resources.sh"; sourceTree = "<group>"; };
+		2ECF6C8E63D6131F6A9E5736A80CA1D3 /* Pods_CAFVuMeter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CAFVuMeter_Tests.framework; path = "Pods-CAFVuMeter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		337B16BD043C8BEF7D28E1C206DD438A /* Pods_CAFVuMeter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CAFVuMeter_Example.framework; path = "Pods-CAFVuMeter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C39543BC9B19406759BD523D1DA35AC /* Pods-CAFVuMeter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CAFVuMeter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		453308E5C764AC9BD0051F65F6DCDC67 /* Pods-CAFVuMeter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CAFVuMeter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		47ECB25AFAA42D84A89A834F00F75738 /* Pods-CAFVuMeter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CAFVuMeter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA4477FCDE2B9954FAEF7EE5CE2D3CD /* ResourceBundle-CAFVuMeter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CAFVuMeter-Info.plist"; sourceTree = "<group>"; };
+		4EC27C1F9993591C3050D000CB98D852 /* Pods-CAFVuMeter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CAFVuMeter_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5B9FB9B572412E281A7F7FAF12238997 /* Pods-CAFVuMeter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CAFVuMeter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F68007449D97ECBD32B810F8A112012 /* CAFVuMeter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CAFVuMeter.modulemap; sourceTree = "<group>"; };
+		62E3ECFE244ED08E7A3450A9AD19A28A /* CAFVuMeter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAFVuMeter-prefix.pch"; sourceTree = "<group>"; };
+		62E434859C342E96BFCE6161E450D71E /* Pods-CAFVuMeter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CAFVuMeter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6BC8EB7192A866EEB367643C10722DDB /* Pods-CAFVuMeter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CAFVuMeter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		733E65183D0DE4CDDE7E9DF4301DF5FE /* Pods-CAFVuMeter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CAFVuMeter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		81562C2B10B3ACF4F12F3A52CDD2FCA7 /* CAFVuMeter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CAFVuMeter.xcconfig; sourceTree = "<group>"; };
+		84931904AF9DB6B4CC0CB1E873BE2429 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DF5C3DF993CB818A906CFB159FE47A /* Pods-CAFVuMeter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CAFVuMeter_Example-umbrella.h"; sourceTree = "<group>"; };
+		87CB04ACE5307217FDFA2A92BCDF69C9 /* Pods-CAFVuMeter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CAFVuMeter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		89F0371E33D0E784EF8065BD888625EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96F96742FEE63901C369CD141C9EBD1F /* Pods-CAFVuMeter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CAFVuMeter_Example.modulemap"; sourceTree = "<group>"; };
+		9CE1FBEDDEAB754F79D010E42941D74E /* VuMeterView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = VuMeterView.xib; path = CAFVuMeter/Assets/VuMeterView.xib; sourceTree = "<group>"; };
+		A2FD2D55A09E5AC20470D4A582E7FD77 /* Pods-CAFVuMeter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CAFVuMeter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9BB1501C120ADBB2BD044A4BB4C4D65 /* Pods-CAFVuMeter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CAFVuMeter_Example-resources.sh"; sourceTree = "<group>"; };
+		B6054090CE6D2FA45B62BDFC17213D16 /* Pods-CAFVuMeter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CAFVuMeter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B6E03B7524C111396E9FA4216D8B761D /* CAFVuMeter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAFVuMeter-umbrella.h"; sourceTree = "<group>"; };
+		BE7446361279967520BCE0B94563C593 /* VuMeterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VuMeterView.swift; path = CAFVuMeter/Classes/VuMeterView.swift; sourceTree = "<group>"; };
+		CB63B4B4748A97ECA5EEF3ABB7629655 /* CAFVuMeter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAFVuMeter-dummy.m"; sourceTree = "<group>"; };
+		D6EA08FB06B0E816E9C9B4C99C9CD6BF /* Pods-CAFVuMeter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CAFVuMeter_Tests-dummy.m"; sourceTree = "<group>"; };
+		D71CE7F0FB7CABEC9C9966CFAE2007D7 /* Pods-CAFVuMeter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CAFVuMeter_Tests.modulemap"; sourceTree = "<group>"; };
+		EFCAD9C5C95417E7E2D68BCF63812EF6 /* Pods-CAFVuMeter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CAFVuMeter_Example-dummy.m"; sourceTree = "<group>"; };
+		F0E42595E224DB5B683CB1E5C653368C /* CAFVuMeter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CAFVuMeter.bundle; path = CAFVuMeter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02D562D4C9C6324B01E3C6FC7A5DC33E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB0F4620FDAD4A77DD2457BC1839B15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC61C9E3E579ECE5E77AE9A8A8BB5FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE61D157042BB218454AF7F1A94671EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977C1A5F18056199FC1EE65E697F13F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0A627B16D30F81154746C2508EF35B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C0EEF375D8AC4D4366E83D7E2FDD03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00DD75FF2FACF481FE3A01043AB41575 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CE1FBEDDEAB754F79D010E42941D74E /* VuMeterView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		16B930E87E11CB1C1B071F66A6F1861E /* Pods-CAFVuMeter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				89F0371E33D0E784EF8065BD888625EA /* Info.plist */,
+				96F96742FEE63901C369CD141C9EBD1F /* Pods-CAFVuMeter_Example.modulemap */,
+				5B9FB9B572412E281A7F7FAF12238997 /* Pods-CAFVuMeter_Example-acknowledgements.markdown */,
+				87CB04ACE5307217FDFA2A92BCDF69C9 /* Pods-CAFVuMeter_Example-acknowledgements.plist */,
+				EFCAD9C5C95417E7E2D68BCF63812EF6 /* Pods-CAFVuMeter_Example-dummy.m */,
+				3C39543BC9B19406759BD523D1DA35AC /* Pods-CAFVuMeter_Example-frameworks.sh */,
+				A9BB1501C120ADBB2BD044A4BB4C4D65 /* Pods-CAFVuMeter_Example-resources.sh */,
+				84DF5C3DF993CB818A906CFB159FE47A /* Pods-CAFVuMeter_Example-umbrella.h */,
+				47ECB25AFAA42D84A89A834F00F75738 /* Pods-CAFVuMeter_Example.debug.xcconfig */,
+				453308E5C764AC9BD0051F65F6DCDC67 /* Pods-CAFVuMeter_Example.release.xcconfig */,
+			);
+			name = "Pods-CAFVuMeter_Example";
+			path = "Target Support Files/Pods-CAFVuMeter_Example";
+			sourceTree = "<group>";
+		};
+		2B5761866659D59934031DDDC1D63CA1 /* Pods-CAFVuMeter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1929797A42209D69BF68CC63FC046E35 /* Info.plist */,
+				D71CE7F0FB7CABEC9C9966CFAE2007D7 /* Pods-CAFVuMeter_Tests.modulemap */,
+				6BC8EB7192A866EEB367643C10722DDB /* Pods-CAFVuMeter_Tests-acknowledgements.markdown */,
+				A2FD2D55A09E5AC20470D4A582E7FD77 /* Pods-CAFVuMeter_Tests-acknowledgements.plist */,
+				D6EA08FB06B0E816E9C9B4C99C9CD6BF /* Pods-CAFVuMeter_Tests-dummy.m */,
+				4EC27C1F9993591C3050D000CB98D852 /* Pods-CAFVuMeter_Tests-frameworks.sh */,
+				2B152B1D5DC7A3BC6FB5B15D6DF21421 /* Pods-CAFVuMeter_Tests-resources.sh */,
+				62E434859C342E96BFCE6161E450D71E /* Pods-CAFVuMeter_Tests-umbrella.h */,
+				733E65183D0DE4CDDE7E9DF4301DF5FE /* Pods-CAFVuMeter_Tests.debug.xcconfig */,
+				B6054090CE6D2FA45B62BDFC17213D16 /* Pods-CAFVuMeter_Tests.release.xcconfig */,
+			);
+			name = "Pods-CAFVuMeter_Tests";
+			path = "Target Support Files/Pods-CAFVuMeter_Tests";
+			sourceTree = "<group>";
+		};
+		7C4BB9EC06005D90C177938D3521089C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0E42595E224DB5B683CB1E5C653368C /* CAFVuMeter.bundle */,
+				22176DEED3D3A88396564A12EDA82E2E /* CAFVuMeter.framework */,
+				337B16BD043C8BEF7D28E1C206DD438A /* Pods_CAFVuMeter_Example.framework */,
+				2ECF6C8E63D6131F6A9E5736A80CA1D3 /* Pods_CAFVuMeter_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D67CC45CC54F7F0B9DFAECD5D669BD0D /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7C4BB9EC06005D90C177938D3521089C /* Products */,
+				B063B0F7C15496B0B93894D4A7C6D357 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AB56A2DE5246823C51509963DADF10CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F68007449D97ECBD32B810F8A112012 /* CAFVuMeter.modulemap */,
+				81562C2B10B3ACF4F12F3A52CDD2FCA7 /* CAFVuMeter.xcconfig */,
+				CB63B4B4748A97ECA5EEF3ABB7629655 /* CAFVuMeter-dummy.m */,
+				62E3ECFE244ED08E7A3450A9AD19A28A /* CAFVuMeter-prefix.pch */,
+				B6E03B7524C111396E9FA4216D8B761D /* CAFVuMeter-umbrella.h */,
+				84931904AF9DB6B4CC0CB1E873BE2429 /* Info.plist */,
+				4BA4477FCDE2B9954FAEF7EE5CE2D3CD /* ResourceBundle-CAFVuMeter-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CAFVuMeter";
+			sourceTree = "<group>";
+		};
+		AC05AF151813C73426C319E65BB3DFA8 /* CAFVuMeter */ = {
+			isa = PBXGroup;
+			children = (
+				BE7446361279967520BCE0B94563C593 /* VuMeterView.swift */,
+				00DD75FF2FACF481FE3A01043AB41575 /* Resources */,
+				AB56A2DE5246823C51509963DADF10CD /* Support Files */,
+			);
+			name = CAFVuMeter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B063B0F7C15496B0B93894D4A7C6D357 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16B930E87E11CB1C1B071F66A6F1861E /* Pods-CAFVuMeter_Example */,
+				2B5761866659D59934031DDDC1D63CA1 /* Pods-CAFVuMeter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D67CC45CC54F7F0B9DFAECD5D669BD0D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC05AF151813C73426C319E65BB3DFA8 /* CAFVuMeter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		255C9E65E53A34E9296EBBFDBEADD053 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA66D1C98FB00DB44B26A973ACA31A2C /* CAFVuMeter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		370B66FAA43DFEF7A81F9B478B7B1ACC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA852F08A2AC110826BE11AD7F6DEF8 /* Pods-CAFVuMeter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463C1CA5F31B8FFA4C34A7058BD07630 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4D062E80114B7A765ECADA560A82AF /* Pods-CAFVuMeter_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		191CECF074D5D77DF155C6E0DF2FAEE9 /* Pods-CAFVuMeter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0C2A79EE22A9940B663F769FE89482 /* Build configuration list for PBXNativeTarget "Pods-CAFVuMeter_Tests" */;
+			buildPhases = (
+				5A90C280B94DEAAD777937F89094FB8E /* Sources */,
+				BFB0F4620FDAD4A77DD2457BC1839B15 /* Frameworks */,
+				463C1CA5F31B8FFA4C34A7058BD07630 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CAFVuMeter_Tests";
+			productName = "Pods-CAFVuMeter_Tests";
+			productReference = 2ECF6C8E63D6131F6A9E5736A80CA1D3 /* Pods_CAFVuMeter_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		24DD70E753E1C7533E4299523E977D2F /* CAFVuMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74E80A6FB8E982F82045741D42F1F86 /* Build configuration list for PBXNativeTarget "CAFVuMeter" */;
+			buildPhases = (
+				8B6562965570AE37CC63137180A03429 /* Sources */,
+				D0A627B16D30F81154746C2508EF35B7 /* Frameworks */,
+				65D3385E1510C075A3C455BF24B81E8F /* Resources */,
+				255C9E65E53A34E9296EBBFDBEADD053 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F1847ADC728612D9B166CAE50690DDD /* PBXTargetDependency */,
+			);
+			name = CAFVuMeter;
+			productName = CAFVuMeter;
+			productReference = 22176DEED3D3A88396564A12EDA82E2E /* CAFVuMeter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		556F25DD23D5D5AC6C9E26C65D862413 /* CAFVuMeter-CAFVuMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DC769F9E6C05EAB20EE8D50A3BF9E7E /* Build configuration list for PBXNativeTarget "CAFVuMeter-CAFVuMeter" */;
+			buildPhases = (
+				C5B4A39C0F2B4DCF0CBA3EF00859DB46 /* Sources */,
+				02D562D4C9C6324B01E3C6FC7A5DC33E /* Frameworks */,
+				6FAD8B8EB414006E0883F089A876BCA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CAFVuMeter-CAFVuMeter";
+			productName = "CAFVuMeter-CAFVuMeter";
+			productReference = F0E42595E224DB5B683CB1E5C653368C /* CAFVuMeter.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C747E983A03B0D7AD3320A87167A1222 /* Pods-CAFVuMeter_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45C74CF066762553C6E86E6478232A37 /* Build configuration list for PBXNativeTarget "Pods-CAFVuMeter_Example" */;
+			buildPhases = (
+				FA76EA151D2E30D87A6B96890496499F /* Sources */,
+				CE61D157042BB218454AF7F1A94671EE /* Frameworks */,
+				370B66FAA43DFEF7A81F9B478B7B1ACC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3A4E2ADAF8C1E6435CEFD332DFADDA7 /* PBXTargetDependency */,
+			);
+			name = "Pods-CAFVuMeter_Example";
+			productName = "Pods-CAFVuMeter_Example";
+			productReference = 337B16BD043C8BEF7D28E1C206DD438A /* Pods_CAFVuMeter_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7C4BB9EC06005D90C177938D3521089C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24DD70E753E1C7533E4299523E977D2F /* CAFVuMeter */,
+				556F25DD23D5D5AC6C9E26C65D862413 /* CAFVuMeter-CAFVuMeter */,
+				C747E983A03B0D7AD3320A87167A1222 /* Pods-CAFVuMeter_Example */,
+				191CECF074D5D77DF155C6E0DF2FAEE9 /* Pods-CAFVuMeter_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65D3385E1510C075A3C455BF24B81E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD85A0F0A22C76ED2C9A3D7A2C76257 /* CAFVuMeter.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FAD8B8EB414006E0883F089A876BCA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4509407BC48C15692DA32890D9D0EB9C /* VuMeterView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A90C280B94DEAAD777937F89094FB8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E0CB563E3ADC72211FA85AD03256FF /* Pods-CAFVuMeter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6562965570AE37CC63137180A03429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E714A9BE6D636F939D6926B9CDACB8 /* CAFVuMeter-dummy.m in Sources */,
+				88AC19D7F60E3C72C58EFB17059C6227 /* VuMeterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5B4A39C0F2B4DCF0CBA3EF00859DB46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA76EA151D2E30D87A6B96890496499F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E136814D64F0FF4F50AEEC0CCCBA65 /* Pods-CAFVuMeter_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F1847ADC728612D9B166CAE50690DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CAFVuMeter-CAFVuMeter";
+			target = 556F25DD23D5D5AC6C9E26C65D862413 /* CAFVuMeter-CAFVuMeter */;
+			targetProxy = 4CA2C2C013DEF8C2BBB4F1986C24D1D0 /* PBXContainerItemProxy */;
+		};
+		B3A4E2ADAF8C1E6435CEFD332DFADDA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CAFVuMeter;
+			target = 24DD70E753E1C7533E4299523E977D2F /* CAFVuMeter */;
+			targetProxy = D1F5A487D4EC9B17EABB8E51F6AA9BD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		50558A18A920ABAF2B0F98831952E944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81562C2B10B3ACF4F12F3A52CDD2FCA7 /* CAFVuMeter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CAFVuMeter/CAFVuMeter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CAFVuMeter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CAFVuMeter/CAFVuMeter.modulemap";
+				PRODUCT_NAME = CAFVuMeter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5ECDA938109FD570DB06DB695CEFCC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81562C2B10B3ACF4F12F3A52CDD2FCA7 /* CAFVuMeter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CAFVuMeter/CAFVuMeter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CAFVuMeter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CAFVuMeter/CAFVuMeter.modulemap";
+				PRODUCT_NAME = CAFVuMeter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8CD5908DA5D8D8CC1ED93659B4CD537E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81562C2B10B3ACF4F12F3A52CDD2FCA7 /* CAFVuMeter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CAFVuMeter";
+				INFOPLIST_FILE = "Target Support Files/CAFVuMeter/ResourceBundle-CAFVuMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = CAFVuMeter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B3C24032F8023B8CF5FBFCC96A8387B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733E65183D0DE4CDDE7E9DF4301DF5FE /* Pods-CAFVuMeter_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CAFVuMeter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CAFVuMeter_Tests/Pods-CAFVuMeter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CAFVuMeter_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B84957C3A7A291D7A879D8D225673FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453308E5C764AC9BD0051F65F6DCDC67 /* Pods-CAFVuMeter_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CAFVuMeter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CAFVuMeter_Example/Pods-CAFVuMeter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CAFVuMeter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B97412A0EBC4973C9AF396C71D6F4F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47ECB25AFAA42D84A89A834F00F75738 /* Pods-CAFVuMeter_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CAFVuMeter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CAFVuMeter_Example/Pods-CAFVuMeter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CAFVuMeter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5E6F517DC447D5CA429D02EBBFC1009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6054090CE6D2FA45B62BDFC17213D16 /* Pods-CAFVuMeter_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CAFVuMeter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CAFVuMeter_Tests/Pods-CAFVuMeter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CAFVuMeter_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA6D0C85F289E5EED429CABA00BCC9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81562C2B10B3ACF4F12F3A52CDD2FCA7 /* CAFVuMeter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CAFVuMeter";
+				INFOPLIST_FILE = "Target Support Files/CAFVuMeter/ResourceBundle-CAFVuMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = CAFVuMeter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DC769F9E6C05EAB20EE8D50A3BF9E7E /* Build configuration list for PBXNativeTarget "CAFVuMeter-CAFVuMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6D0C85F289E5EED429CABA00BCC9F6 /* Debug */,
+				8CD5908DA5D8D8CC1ED93659B4CD537E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45C74CF066762553C6E86E6478232A37 /* Build configuration list for PBXNativeTarget "Pods-CAFVuMeter_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97412A0EBC4973C9AF396C71D6F4F94 /* Debug */,
+				B84957C3A7A291D7A879D8D225673FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0C2A79EE22A9940B663F769FE89482 /* Build configuration list for PBXNativeTarget "Pods-CAFVuMeter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C24032F8023B8CF5FBFCC96A8387B2 /* Debug */,
+				E5E6F517DC447D5CA429D02EBBFC1009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74E80A6FB8E982F82045741D42F1F86 /* Build configuration list for PBXNativeTarget "CAFVuMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50558A18A920ABAF2B0F98831952E944 /* Debug */,
+				5ECDA938109FD570DB06DB695CEFCC3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

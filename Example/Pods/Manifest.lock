@@ -1,0 +1,16 @@
+PODS:
+  - CAFVuMeter (0.1.0)
+
+DEPENDENCIES:
+  - CAFVuMeter (from `../`)
+
+EXTERNAL SOURCES:
+  CAFVuMeter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CAFVuMeter: 92c000edded496bc71ec8beda26fe5f927cdf478
+
+PODFILE CHECKSUM: 11b05370314a283167ff8e53ea57fc05efebf02d
+
+COCOAPODS: 1.3.1

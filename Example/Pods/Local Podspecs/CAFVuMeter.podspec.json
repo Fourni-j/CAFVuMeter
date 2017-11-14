@@ -1,0 +1,27 @@
+{
+  "name": "CAFVuMeter",
+  "version": "0.1.0",
+  "summary": "A short description of CAFVuMeter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fourni-j/CAFVuMeter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fourni-j": "charladfr@me.com"
+  },
+  "source": {
+    "git": "https://github.com/fourni-j/CAFVuMeter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CAFVuMeter/Classes/**/*",
+  "resource_bundles": {
+    "CAFVuMeter": [
+      "CAFVuMeter/Assets/*.xib"
+    ]
+  }
+}

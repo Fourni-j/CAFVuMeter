@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CAFVuMeter_Example' do
+  pod 'CAFVuMeter', :path => '../'
+
+  target 'CAFVuMeter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

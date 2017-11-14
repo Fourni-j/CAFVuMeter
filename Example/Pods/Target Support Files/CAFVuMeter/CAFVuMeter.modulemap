@@ -1,0 +1,6 @@
+framework module CAFVuMeter {
+  umbrella header "CAFVuMeter-umbrella.h"
+
+  export *
+  module * { export * }
+}
