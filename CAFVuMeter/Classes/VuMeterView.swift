@@ -55,19 +55,12 @@ public class VuMeterView: UIView {
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-//        let bundle = Bundle(for: VuMeterView.self)
-
         let podBundle = Bundle(for: VuMeterView.self)
         if let bundleURL = podBundle.url(forResource: "CAFVuMeter", withExtension: "bundle") {
             if let bundle = Bundle(url: bundleURL) {
-                bundle.loadNibNamed("VuMeterView", owner: self, options: nil)![0]
+                _ = bundle.loadNibNamed("VuMeterView", owner: self, options: nil)![0]
             }
         }
-        
-//        _ = bundle.loadNibNamed("VuMeterView", owner: self, options: nil)![0]
-        
-//        _ = Bundle.main.loadNibNamed("VuMeterView", owner: self, options: nil)![0]
         self.addSubview(view)
         view.frame = self.bounds
     }
